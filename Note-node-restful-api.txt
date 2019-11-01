@@ -1,0 +1,34 @@
+Build A Restful Api With Node.js Express & MongoDB
+
+// install init
+npm init
+enter -> enter...
+
+// install express nodemon
+npm i express nodemon
+
+// install mogoose
+npm i mongoose
+
+// install dotenv
+npm i dotenv
+
+// create mongodb atlas
+mlab.com
+    connect
+        mongodb+srv://admin:admin123456@noderestfulapi-2cgog.mongodb.net/test?retryWrites=true&w=majority
+
+// install body-parser
+npm i body-parser
+    const bodyParser = require("body-parser");
+    app.use(bodyParser.json());
+
+// install cors
+npm i cors
+    const cors = require("cors");
+    app.use(cors());
+
+// get data from API
+fetch("http://localhost:4000/posts")
+  .then(result => { return result.json(); })
+  .then(data => console.log(data));
